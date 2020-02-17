@@ -32,6 +32,7 @@ export function createLocation(path, state, key, currentLocation) {
       location.state = state;
   }
 
+  /*
   try {
     location.pathname = decodeURI(location.pathname);
   } catch (e) {
@@ -46,6 +47,7 @@ export function createLocation(path, state, key, currentLocation) {
       throw e;
     }
   }
+  */
 
   if (key) location.key = key;
 
